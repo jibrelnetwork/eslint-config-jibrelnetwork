@@ -36,51 +36,95 @@ module.exports = {
   "rules": {
     "semi": [2, "never"],
     "no-var": 2,
-    "max-len": [2, 130],
+    "quotes": [2, "single"],
+    "max-len": [2, 100],
     "new-cap": 0,
     "no-console": 1,
     "func-style": [2, "declaration", { "allowArrowFunctions": true }],
+    "quote-props": 0,
+    "no-continue": 0,
     "comma-dangle": [2, "always-multiline"],
-    "arrow-parens": [2, "always"],
+    "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
     "padded-blocks": 0,
+    "require-yield": 1,
+    "global-require": 0,
     "no-else-return": 0,
     "prefer-template": 2,
-    "linebreak-style": "off",
+    "linebreak-style": 0,
     "arrow-body-style": [2, "as-needed"],
     "no-nested-ternary": 0,
     "no-confusing-arrow": 0,
-    "object-curly-newline": 0,
+    "object-curly-newline": [2, {
+      "multiline": true,
+      "consistent": true
+    }],
+    "no-underscore-dangle": 0,
     "no-use-before-define": 2,
     "no-constant-condition": [2, { "checkLoops": false }],
+    "class-methods-use-this": 1,
     "function-paren-newline": 0,
     "newline-per-chained-call": [2, { "ignoreChainWithDepth": 4 }],
 
     "import/named": 2,
     "import/default": 2,
     "import/namespace": 2,
-    "import/no-unresolved": 2,
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
     "import/prefer-default-export": 0,
-    "import/no-extraneous-dependencies": [2, {
-      "devDependencies": true
-    }],
+    "import/no-extraneous-dependencies": 0,
+
     "indent": [2, 2, {
       "SwitchCase": 1,
       "MemberExpression": 1,
-      "VariableDeclarator": 1
+      "VariableDeclarator": 1,
+      "FunctionDeclaration": {
+        "parameters": "first"
+      },
+      "FunctionExpression": {
+        "parameters": "first"
+      },
+      "CallExpression": {
+        "arguments": "first"
+      },
+      "ArrayExpression": "first",
+      "ObjectExpression": "first"
     }],
-    
+
+    "no-multi-spaces": [2, {
+      "exceptions": {
+        "Property": true,
+        "VariableDeclarator": true,
+        "ImportDeclaration": true
+      }
+    }],
+
     "react/no-typos": 0,
-    "react/jsx-no-bind": [1, { "allowArrowFunctions": true }],
+    "react/prop-types": [2, { "skipUndeclared": true }],
     "react/no-set-state": 0,
     "react/no-string-refs": 1,
     "react/no-find-dom-node": 1,
     "react/require-extension": 0,
-    "react/forbid-prop-types": 0,
+    "react/forbid-prop-types": 2,
     "react/no-array-index-key": 2,
     "react/no-unused-prop-types": 2,
-    "react/jsx-max-props-per-line": [2, { "maximum": 5 }],
-    "react/jsx-filename-extension": 0,
+    "react/require-default-props": 2,
     "react/prefer-stateless-function": 1,
+    "react/default-props-match-prop-types": 0,
+
+    "react/jsx-key": 2,
+    "react/jsx-indent": [2, 2],
+    "react/jsx-no-bind": [1, { "allowArrowFunctions": true }],
+    "react/jsx-boolean-value": [2, "never"],
+    "react/jsx-curly-spacing": [2, {
+      "when": "never",
+      "allowMultiline": false
+    }],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-filename-extension": [2, {
+      "extensions": [".js"]
+    }],
+    "react/jsx-max-props-per-line": [2, { "maximum": 5 }],
+    "react/jsx-closing-bracket-location": 2,
 
     "jsx-a11y/aria-props": 1,
     "jsx-a11y/href-no-hash": 0,
@@ -93,6 +137,8 @@ module.exports = {
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-static-element-interactions": 0,
 
+    "jsx-quotes": [2, "prefer-single"],
+
     "more/no-then": 2,
     "more/no-window": 0,
     "more/no-void-map": 2,
@@ -104,7 +150,7 @@ module.exports = {
 
     "fp/no-let": 2,
     "fp/no-nil": 0,
-    "fp/no-this": 2,
+    "fp/no-this": 0,
     "fp/no-class": 2,
     "fp/no-mutation": [2, {
       "allowThis": true,
@@ -122,6 +168,6 @@ module.exports = {
     }],
 
     "unicorn/filename-case": 0,
-    "unicorn/regex-shorthand": "off"
+    "unicorn/regex-shorthand": 0
   }
 }
