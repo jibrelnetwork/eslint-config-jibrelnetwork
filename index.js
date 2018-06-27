@@ -139,7 +139,6 @@ module.exports = {
 
     "jsx-quotes": [2, "prefer-single"],
 
-    "more/no-then": 2,
     "more/no-window": 0,
     "more/no-void-map": 2,
     "more/no-c-like-loops": 2,
