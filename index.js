@@ -151,6 +151,7 @@ module.exports = {
     "fp/no-nil": 0,
     "fp/no-this": 0,
     "fp/no-class": 2,
+    "fp/no-loops": 0,
     "fp/no-throw": 0,
     "fp/no-mutation": [2, {
       "allowThis": true,
