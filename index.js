@@ -172,6 +172,7 @@ module.exports = {
     }],
 
     "unicorn/filename-case": 0,
-    "unicorn/regex-shorthand": 0
+    "unicorn/regex-shorthand": 0,
+    "unicorn/explicit-length-check": 0
   }
 }
