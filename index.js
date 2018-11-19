@@ -21,6 +21,7 @@ module.exports = {
     "fp",
     "more",
     "jest",
+    "babel",
     "react",
     "ramda",
     "unicorn",
@@ -45,7 +46,7 @@ module.exports = {
     "no-continue": 0,
     "comma-dangle": [2, "always-multiline"],
     "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
-    "padded-blocks": 0,
+    "padded-blocks": [2, "never"],
     "require-yield": 1,
     "global-require": 0,
     "no-else-return": 0,
@@ -63,6 +64,9 @@ module.exports = {
     "no-constant-condition": [2, { "checkLoops": false }],
     "class-methods-use-this": 1,
     "function-paren-newline": 0,
+    "no-multiple-empty-lines": [2, {
+      "max": 1
+    }],
     "newline-per-chained-call": [2, { "ignoreChainWithDepth": 4 }],
 
     "import/named": 2,
@@ -108,7 +112,7 @@ module.exports = {
     "react/no-array-index-key": 2,
     "react/no-unused-prop-types": 2,
     "react/require-default-props": 2,
-    "react/prefer-stateless-function": 1,
+    "react/prefer-stateless-function": 0,
     "react/default-props-match-prop-types": 0,
 
     "react/jsx-key": 2,
@@ -150,10 +154,11 @@ module.exports = {
     "fp/no-let": 2,
     "fp/no-nil": 0,
     "fp/no-this": 0,
-    "fp/no-class": 2,
+    "fp/no-class": 0,
     "fp/no-loops": 0,
     "fp/no-throw": 0,
     "fp/no-mutation": [2, {
+      "commonjs": true,
       "allowThis": true,
       "exceptions": [
         { "property": "href" },
