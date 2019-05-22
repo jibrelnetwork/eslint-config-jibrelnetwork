@@ -34,17 +34,6 @@ module.exports = {
     "sourceType": "module",
     "ecmaFeatures": { "jsx": true }
   },
-  "globals": {
-    "Modernizr": false,
-    "__DEV__": false,
-    "__PROD__": false,
-    "__MAIN_RPC_ADDR__": false,
-    "__MAIN_RPC_PORT__": false,
-    "__ROPSTEN_RPC_ADDR__": false,
-    "__ROPSTEN_RPC_PORT__": false,
-    "__DEFAULT_TICKER_API__": false,
-    "__DEFAULT_BLOCKEXPLORER_API__": false
-  },
   "rules": {
     "semi": [2, "never"],
     "no-var": 2,
