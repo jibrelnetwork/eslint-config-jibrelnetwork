@@ -1,6 +1,6 @@
 {
-  "name": "@jibrelnetwork/eslint-config-jibrelnetwork",
-  "version": "1.1.0",
+  "name": "@jibrelnetwork/eslint-config",
+  "version": "1.1.1",
   "description": "The base ESLint config for Jibrel Network projects",
   "main": "index.js",
   "engines": {
